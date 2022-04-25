@@ -6,7 +6,7 @@
         <!-- Content Block -->
         <div>
             <h1> Hello World </h1>
-            {{ $users }}
+            {{ $user }}
         </div>
 
         <x-footer/>
