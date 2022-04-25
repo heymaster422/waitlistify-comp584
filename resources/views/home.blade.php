@@ -5,7 +5,7 @@
 
         <!-- Content Block -->
         <div>
-            <h1> Enrollment Page </h1>
+            <h1> Home Page</h1>
         </div>
 
         <x-footer/>

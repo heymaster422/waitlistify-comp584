@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\FrontController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,14 +21,17 @@ Route::get('/login', function () {
 });
 
 
-Route::get('/enrollment', function () {
-    return view('enrollment');
-});
+Route::get('/enrollment', [FrontController::class, 'enrollment']);
 
 Route::resource('user', UserController::class);
 Route::get('/users', [UserController::class, 'show_all']);
 
 Route::get('/login', [UserController::class, 'login']);
+
+Route::get('/home', [FrontController::class, 'home']);
+Route::get('/profile', [FrontController::class, 'profile']);
+Route::get('/stats', [FrontController::class, 'stats']);
+
 
 
 

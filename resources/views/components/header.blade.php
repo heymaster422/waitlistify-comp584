@@ -12,10 +12,10 @@
             </a>
 
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Enrollment</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Stats</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="/home" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="/enrollment" class="nav-link">Enrollment</a></li>
+                <li class="nav-item"><a href="/stats" class="nav-link">Stats</a></li>
+                <li class="nav-item"><a href="/profile" class="nav-link">Profile</a></li>
+                <!-- <li class="nav-item"><a href="/about" class="nav-link">About</a></li> -->
             </ul>
         </header>
