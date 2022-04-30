@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-
+use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
     /**
@@ -24,9 +24,11 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('register');
+        return view('/register');
     }
-
+    public function thanks(){
+        return view('thankyou');
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -39,11 +41,11 @@ class UserController extends Controller
             'name' => $request->input('name'),
             'email' => $request->input('email'),
             'email_verified_at' => now(),
-            'password' => $request->input('password'), // password
+            'password' => Hash::make($request->input('password')), // password
             'remember_token' => $request->input('remember_token'),
         ]);
 
-        return view("/user/$user->id");
+        return view("/thankyou");
     }
 
     /**
@@ -55,10 +57,13 @@ class UserController extends Controller
     public function login()
     {
         //$user = ;
-
         return view("/login");
     }
-    
+    public function logout()
+    {
+        //$user = ;
+        return view("/login");
+    }
 
     /**
      * Display the specified resource.
@@ -80,7 +85,7 @@ class UserController extends Controller
      */
     public function show_all()
     {
-        //dd(User::all());
+        dd(User::all());
         return view('welcome',[
             'users' => User::all()
         ]);

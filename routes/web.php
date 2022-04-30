@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,24 +14,27 @@ use App\Http\Controllers\FrontController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//-----------Landing Page-------------
 
-Route::view('/','login');
+Route::get('/', [UserController::class, 'login']);
+Route::post('/authenticate', [LoginController::class, 'authenticate']);
+Route::get('/register', [UserController::class, 'create']);
+Route::get('/thankyou', [UserController::class, 'thanks']);
 
-Route::get('/login', function () {
-    return view('auth/login');
-});
+Route::get('/logout', [LoginController::class, 'logout']);
+//-----------Nav Bar---------------------------------------
+Route::get('/enrollment', [FrontController::class, 'enrollment']);//->middleware('auth.basic');
+Route::get('/home', [FrontController::class, 'home']);//->middleware('auth.basic');
+Route::get('/profile', [FrontController::class, 'profile']);//->middleware('auth.basic');
+Route::get('/stats', [FrontController::class, 'stats']);//->middleware('auth.basic');
 
-
-Route::get('/enrollment', [FrontController::class, 'enrollment']);
-
+//---------- Testing Users working---------------------------------------
 Route::resource('user', UserController::class);
 Route::get('/users', [UserController::class, 'show_all']);
 
-Route::get('/login', [UserController::class, 'login']);
 
-Route::get('/home', [FrontController::class, 'home']);
-Route::get('/profile', [FrontController::class, 'profile']);
-Route::get('/stats', [FrontController::class, 'stats']);
+
+
 
 
 

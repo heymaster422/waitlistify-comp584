@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 
         <x-header/>
+
             <div class="container">
                 <h2>Login</h2>
-                    <form method="post" action="/login">
+                
+                @error('failed')
+                <div class="alert alert-danger">{{ $message}} </div>
+                @enderror
+                
+                    <form method="post" action="/authenticate">
                         @csrf
                         <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" class="form-control" id="name" name="name">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email">
                         </div>
 
                         <div class="form-group">
@@ -20,6 +26,8 @@
                         </div>
                         
                     </form>
+                    
+                    <a href="/register">Don't have an account? Register Here.</a>
             </div>
         <x-footer/>
 
