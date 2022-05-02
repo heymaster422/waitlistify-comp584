@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\SurveyController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,21 +18,24 @@ use App\Http\Controllers\LoginController;
 */
 //-----------Landing Page-------------
 
-Route::get('/', [UserController::class, 'login']);
+Route::get('/', [UserController::class, 'login'])->name('login');
 Route::post('/authenticate', [LoginController::class, 'authenticate']);
 Route::get('/register', [UserController::class, 'create']);
 Route::get('/thankyou', [UserController::class, 'thanks']);
 
 Route::get('/logout', [LoginController::class, 'logout']);
 //-----------Nav Bar---------------------------------------
-Route::get('/enrollment', [FrontController::class, 'enrollment']);//->middleware('auth.basic');
-Route::get('/home', [FrontController::class, 'home']);//->middleware('auth.basic');
-Route::get('/profile', [FrontController::class, 'profile']);//->middleware('auth.basic');
-Route::get('/stats', [FrontController::class, 'stats']);//->middleware('auth.basic');
+Route::get('/enrollment', [FrontController::class, 'enrollment'])->middleware('auth');
+Route::get('/home', [FrontController::class, 'home'])->middleware('auth');
+Route::get('/profile', [FrontController::class, 'profile'])->middleware('auth');
+Route::get('/stats', [FrontController::class, 'stats'])->middleware('auth');
 
 //---------- Testing Users working---------------------------------------
 Route::resource('user', UserController::class);
 Route::get('/users', [UserController::class, 'show_all']);
+
+Route::resource('count', SurveyController::class);
+Route::get('stats', [SurveyController::class, 'show_comp_584'])->middleware('auth');
 
 
 

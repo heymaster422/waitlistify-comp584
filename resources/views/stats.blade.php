@@ -6,6 +6,7 @@
         <!-- Content Block -->
         <div>
             <h1> Stats Page</h1>
+            {{ $count }}
         </div>
         <table class="table table-striped">
             <thead>
@@ -37,6 +38,7 @@
             </tr>
             </tbody>
         </table>
+
         <x-footer/>
 
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>

@@ -59,11 +59,7 @@ class UserController extends Controller
         //$user = ;
         return view("/login");
     }
-    public function logout()
-    {
-        //$user = ;
-        return view("/login");
-    }
+
 
     /**
      * Display the specified resource.

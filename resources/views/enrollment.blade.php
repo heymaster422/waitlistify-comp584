@@ -9,13 +9,13 @@
             </div>
             
             <h4 class="fw-bold text-center mt-3"></h4>
-            <form method="POST" action="/user" class=" bg-white px-4" action="">
+            <form method="POST" action="/survey" class=" bg-white px-4" action="">
             @csrf
             <div class="row col-8">
                     <div class="col-5">
                     </div>
                     <div class="col-1">
-                        <div class="form-check-left form-check-inline mb-2">
+                        <div class="form-group form-check-left form-check-inline mb-2">
                             <label class="form-check-label" for="defaultCheck1">
                                 Enroll
                             </label>
@@ -28,9 +28,9 @@
                         <p class="fw-bold">Comp 584 Adv Web Engineering</p>
                     </div>
                     <div class="col-3">
-                        <div class="form-check form-check-inline mb-2">
-                            <input class="form-check-input" type="checkbox" name="courses[]" value="Comp 584" id="Comp 584" />
-                            <label class="form-check-label" for="Comp 584">
+                        <div class="form-group form-check form-check-inline mb-2">
+                            <input class="form-check-input" type="checkbox" name="Comp_584" value="Comp_584" id="Comp_584" />
+                            <label class="form-check-label" for="Comp_584">
                             </label>
                         </div>
                     </div>
@@ -42,9 +42,9 @@
                         <p class="fw-bold">Comp 333 Concepts of Programming</p>
                     </div>
                     <div class="col">
-                        <div class="form-check form-check-inline mb-2">
-                            <input class="form-check-input" type="checkbox" name="courses[]" value="Comp 333" id="Comp 333" />
-                            <label class="form-check-label" for="Comp 333">
+                        <div class="form-group form-check form-check-inline mb-2">
+                            <input class="form-check-input" type="checkbox" name="Comp_333" value="Comp_333" id="Comp_333" />
+                            <label class="form-check-label" for="Comp_333">
                             </label>
                         </div>
                     </div>
@@ -56,9 +56,9 @@
                         <p class="fw-bold">Comp 484 Web Engineering</p>
                     </div>
                     <div class="col">
-                        <div class="form-check form-check-inline mb-2">
-                            <input class="form-check-input" type="checkbox" name="courses[]" value="Comp 484" id="Comp 484" />
-                            <label class="form-check-label" for="Comp 484">
+                        <div class="form-group form-check form-check-inline mb-2">
+                            <input class="form-check-input" type="checkbox" name="Comp_484" value="Comp_484" id="Comp_484" />
+                            <label class="form-check-label" for="Comp_484">
                             </label>
                         </div>
                     </div>
@@ -70,9 +70,9 @@
                         <p class="fw-bold">Comp 424 System Security</p>
                     </div>
                     <div class="col">
-                        <div class="form-check form-check-inline mb-2">
-                            <input class="form-check-input" type="checkbox" name="courses[]" value="Comp 424" id="Comp 424" />
-                            <label class="form-check-label" for="Comp 424">
+                        <div class="form-group form-check form-check-inline mb-2">
+                            <input class="form-check-input" type="checkbox" name="Comp_424" value="Comp_424" id="Comp_424" />
+                            <label class="form-check-label" for="Comp_424">
                             </label>
                         </div>
                     </div>
@@ -84,9 +84,9 @@
                         <p class="fw-bold">Comp 583 Software Engineer Mngmt</p>
                     </div>
                     <div class="col">
-                        <div class="form-check form-check-inline mb-2">
-                            <input class="form-check-input" type="checkbox" name="courses[]" value="Comp 583" id="Comp 583" />
-                            <label class="form-check-label" for="Comp 583">
+                        <div class="form-group form-check form-check-inline mb-2">
+                            <input class="form-check-input" type="checkbox" name="Comp_583" value="Comp_583" id="Comp_583" />
+                            <label class="form-check-label" for="Comp_583">
                             </label>
                         </div>
                     </div>

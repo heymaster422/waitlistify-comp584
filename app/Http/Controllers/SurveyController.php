@@ -3,17 +3,37 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\SurveyRequest;
-use App\Models\surveyResults;
+use App\Models\Survey;
+use Illuminate\Support\Facades\DB;
+
 class SurveyController extends Controller
 {
-    public function store(SurveyRequest $request){
-        $request->validate([
-            'name' => 'required|max:255', 
-            'fruits' => 'required'
-        ]);
-        $survey = $request->all();
 
-        return view("/welcome/$survey->id");
+
+    /**
+     * Display all Survey Answers
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function show_info()
+    {
+        dd(Survey::all());
+        return view('stats',[
+            'survey' => Survey::all()
+        ]);
     }
+
+    /**
+     * Show database information
+     *
+     * 
+     */
+    public function show_comp_584()
+    {
+        $count = Survey::where('comp_484', 1)->count();
+        
+        return view ('stats', compact('count'));
+    }
+
+    
 }
