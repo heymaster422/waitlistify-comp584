@@ -30,13 +30,19 @@ Route::get('/home', [FrontController::class, 'home'])->middleware('auth');
 Route::get('/profile', [FrontController::class, 'profile'])->middleware('auth');
 Route::get('/stats', [FrontController::class, 'stats'])->middleware('auth');
 
+
 //---------- Testing Users working---------------------------------------
 Route::resource('user', UserController::class);
 Route::get('/users', [UserController::class, 'show_all']);
 
-Route::resource('count', SurveyController::class);
-Route::get('stats', [SurveyController::class, 'show_comp_584'])->middleware('auth');
+//---------- Testing Survey Working
+Route::get('stats', [SurveyController::class, 'show_count'])->middleware('auth');
 
+
+Route::get('/enrolled', [SurveyController::class, 'enrolled'])->middleware('auth');
+Route::post('/enrolled', [SurveyController::class, 'store']);
+//Route::resource('submit', SurveyController::class);
+//Route::post('/submit',[SurveyController::class, 'submit']);
 
 
 
