@@ -11,17 +11,6 @@
             <h4 class="fw-bold text-center mt-3"></h4>
             <form method="POST" action="/enrolled" class=" bg-white px-4">
             @csrf
-            <div class="row col-8">
-                    <div class="col-5">
-                    </div>
-                    <div class="col-1">
-                        <div class="form-group form-check-left form-check-inline mb-2">
-                            <label class="form-check-label" for="defaultCheck1">
-                                Enroll
-                            </label>
-                        </div>
-                    </div>
-            </div>
             <!-- Question 1 -->
             <div class="row col-5 form-check-inline">
                 <div class="form-group">
@@ -31,7 +20,7 @@
                     <div class="col-5">
                         <div class="form-group form-check mb-2">
                             <input class="form-check-input" type="checkbox" name="Comp_584" value="1" id="Comp_584" />
-                            <label class="form-check-label" for="Comp_584">
+                            <label class="form-check-label" for="Comp_584">Enroll
                             </label>
                         </div>
                     </div>
@@ -47,7 +36,7 @@
                     <div class="col">
                         <div class="form-group form-check form-check-inline mb-2">
                             <input class="form-check-input" type="checkbox" name="Comp_333" value="1" id="Comp_333" />
-                            <label class="form-check-label" for="Comp_333">
+                            <label class="form-check-label" for="Comp_333">Enroll
                             </label>
                         </div>
                     </div>
@@ -62,7 +51,7 @@
                     <div class="col">
                         <div class="form-group form-check form-check-inline mb-2">
                             <input class="form-check-input" type="checkbox" name="Comp_484" value="1" id="Comp_484" />
-                            <label class="form-check-label" for="Comp_484">
+                            <label class="form-check-label" for="Comp_484">Enroll
                             </label>
                         </div>
                     </div>
@@ -77,7 +66,7 @@
                     <div class="col">
                         <div class="form-group form-check form-check-inline mb-2">
                             <input class="form-check-input" type="checkbox" name="Comp_424" value="1" id="Comp_424" />
-                            <label class="form-check-label" for="Comp_424">
+                            <label class="form-check-label" for="Comp_424">Enroll
                             </label>
                         </div>
                     </div>
@@ -92,7 +81,7 @@
                     <div class="col">
                         <div class="form-group form-check form-check-inline mb-2">
                             <input class="form-check-input" type="checkbox" name="Comp_583" value="1" id="Comp_583" />
-                            <label class="form-check-label" for="Comp_583">
+                            <label class="form-check-label" for="Comp_583">Enroll
                             </label>
                         </div>
                     </div>

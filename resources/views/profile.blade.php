@@ -4,10 +4,10 @@
             
 
         <!-- Content Block -->
-        <div>
+        <div class="container">
             <h1> Profile Page</h1>
             <h2>You are logged as [ {{ session('name')}} ]</h2>
-            <div class="container">
+            <div>
                 <a href="/logout"><button style="cursor:pointer" type="submit" class="btn btn-primary">Logout</button></a>
             </div>
         </div>
