@@ -11,9 +11,8 @@
                 the CSUN Computer Science department can have a concrete number on how many
                 students are taking a class and prepare accordingly.
             </p>
-            <!--hello -->
-            <!--hello -->
-            <!--hello -->
+            <!--This is the description of our website. -->
+            
         </div>
 
         <x-footer/>

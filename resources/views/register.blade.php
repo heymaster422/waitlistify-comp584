@@ -25,6 +25,7 @@
                         </div>
                         
                     </form>
+                    <!--Creates a form for user input to register. Has fields for name, email, and password. Also has a submit button. -->
             </div>
         <x-footer/>
 

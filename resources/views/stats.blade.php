@@ -28,6 +28,7 @@
 
                 </tbody>
             </table>
+            <!--Table that presents the stats for enrollment of each class. -->
         </div>
         <x-footer/>
 

@@ -26,6 +26,7 @@
                         </div>
                         
                     </form>
+                    <!--Creates form for user login, asks for email, password and has submit button -->
                     
                     <a href="/register">Don't have an account? Register Here.</a>
             </div>
