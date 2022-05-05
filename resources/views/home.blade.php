@@ -12,6 +12,7 @@
                 students are taking a class and prepare accordingly.
             </p>
             <!--hello -->
+            <!--hello -->
         </div>
 
         <x-footer/>
