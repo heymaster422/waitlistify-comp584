@@ -2,7 +2,8 @@
 ## How to run Waitlistify
 1. Our website uses **Laravel**, **Docker**, and **SQL(specificially using MySQLWorkbench)**. Please install the required software and composers.
 
-2. To use the website, simply clone the repository and in your ubuntu console go to the file directory and run `bash ./vendor/laravel/sail/bin/sail up`. 
+2. To use the website, simply clone the repository and in your ubuntu console go to the file directory of the project and 
+   run `bash ./vendor/laravel/sail/bin/sail up`. 
 
 3. Connect to the Database by opening mySQL Workbench and conect to Database with the password: `password`. 
 
