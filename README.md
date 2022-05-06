@@ -1,5 +1,14 @@
 # Waitlistify
-Our website uses **Laravel**, **Docker**, and **SQL(specificially using MySQLWorkbench)**. To use the website, simply clone the repository and in your ubuntu console run `bash ./vendor/laravel/sail/bin/sail up`. After this you must run `bash ./vendor/laravel/sail/bin/sail artisan migrate` to migrate the database tables into MySQL. After this, simply go to localhost and enjoy. As of right now, you can login and register, enroll in classes you are interested in, and have the classes be sorted by the most popular to least popular. 
+## How to run Waitlistify
+1. Our website uses **Laravel**, **Docker**, and **SQL(specificially using MySQLWorkbench)**. Please install the required software and composers.
+
+2.To use the website, simply clone the repository and in your ubuntu console go to the file directory and run `bash ./vendor/laravel/sail/bin/sail up`. 
+
+3. connect to the Database by opening mySQL Workbench and conect to Database with the password: `password`. 
+
+4. Next you must run `bash ./vendor/laravel/sail/bin/sail artisan migrate` to migrate the database tables into MySQL. 
+
+After this, simply go to localhost and enjoy. As of right now, you can login and register, enroll in classes you are interested in, and have the classes be sorted by the most popular to least popular. 
 
 ## About Laravel
 
