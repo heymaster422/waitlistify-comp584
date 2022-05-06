@@ -1,5 +1,5 @@
 # Waitlistify
-
+Our website uses Laravel, Docker, and SQL(specificially using MySQLWorkbench). To use the website, simply clone the repository and in your ubuntu console run "bash ./vendor/laravel/sail/bin/sail up". After this you must run "bash ./vendor/laravel/sail/bin/sail artisan migrate" to get the database working. After this, simply go to localhost and enjoy.
 
 ## About Laravel
 
