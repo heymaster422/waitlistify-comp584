@@ -9,7 +9,7 @@
 
 4. Next you must run `bash ./vendor/laravel/sail/bin/sail artisan migrate` to migrate the database tables into MySQL. 
 
-After this, simply go to localhost and enjoy. As of right now, you can login and register, enroll in classes you are interested in, and have the classes be sorted by the most popular to least popular. 
+Connect to Local Host and you should land on the Login page. Notice you won’t be able to access any nav bar pages unless you’re logged in. Since your DB is empty feel free to create an account and login with it. You will be redirected to the homepage. From here you can learn about our project. To actually use our website head to the Enrollment page and enroll in some classes ! Once you submit your form you should see the data get updated to the stats page. The stats page is automatically sorted from most popular to least popular. On the profile page you may logout there.
 
 ## About Laravel
 
